@@ -2420,6 +2420,16 @@
 		)
 		(uuid "f7bed56d-723f-4f36-98d2-f1b678724e6c")
 	)
+	(text "Pin 3 TACHO"
+		(exclude_from_sim no)
+		(at 270.002 39.624 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "cc0f92c9-59d6-4f35-babf-e37bd2616e23")
+	)
 	(symbol
 		(lib_id "Connector:Conn_01x04_Pin")
 		(at 264.16 93.98 180)
