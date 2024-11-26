@@ -2420,6 +2420,16 @@
 		)
 		(uuid "f7bed56d-723f-4f36-98d2-f1b678724e6c")
 	)
+	(text "Placeholder"
+		(exclude_from_sim no)
+		(at 41.656 127.254 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "78e19b70-1904-4651-82fc-cddbd3cde3ce")
+	)
 	(text "Pin 3 TACHO"
 		(exclude_from_sim no)
 		(at 270.002 39.624 0)
