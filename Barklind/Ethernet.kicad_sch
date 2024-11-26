@@ -2914,6 +2914,16 @@
 		)
 		(uuid "33cf32cd-c94f-403c-8d6e-a88d85218db3")
 	)
+	(text "Power smoothing?"
+		(exclude_from_sim no)
+		(at 205.486 60.706 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "36455f65-5326-4aae-b6fb-8d34ee275e59")
+	)
 	(text "Ferromagnetic bead?\n"
 		(exclude_from_sim no)
 		(at 63.754 36.068 0)
