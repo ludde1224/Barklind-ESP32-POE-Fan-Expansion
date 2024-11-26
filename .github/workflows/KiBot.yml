@@ -14,9 +14,9 @@ jobs:
   kibot:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4.2.2
     - name: Run KiBot
-      uses: INTI-CMNB/KiBot@v2_k8
+      uses: INTI-CMNB/KiBot@v1.8.2
       with:
         config: Barklind/config.kibot.yaml
         dir: docs
