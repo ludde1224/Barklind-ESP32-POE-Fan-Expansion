@@ -2888,6 +2888,44 @@
 		)
 	)
 	(sheet
+		(at 80.01 45.72)
+		(size 88.9 34.29)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "89fb52d6-c61e-420f-b8fc-90f9b194f817")
+		(property "Sheetname" "Ethernet"
+			(at 80.01 45.0084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Ethernet.kicad_sch"
+			(at 80.01 80.5946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Barklind"
+				(path "/489e2a6e-50ed-4353-8289-8893922fad24"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 80.01 109.22)
 		(size 68.58 30.48)
 		(fields_autoplaced yes)

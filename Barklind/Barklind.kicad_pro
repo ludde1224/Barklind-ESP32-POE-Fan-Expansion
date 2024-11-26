@@ -598,6 +598,10 @@
     [
       "991fccf6-6ad5-444f-b7a4-501eb9405501",
       "PoE"
+    ],
+    [
+      "89fb52d6-c61e-420f-b8fc-90f9b194f817",
+      "Ethernet"
     ]
   ],
   "text_variables": {}
