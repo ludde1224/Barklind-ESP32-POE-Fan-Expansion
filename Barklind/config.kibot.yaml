@@ -8,12 +8,12 @@ preflight:
 
 outputs:
 
-  - name: ibom
-    comment: 'HTML interactive BoM'
-    type: ibom
-    dir: BoM
-    options:
-      layer_view: F
+  # - name: ibom
+  #   comment: 'HTML interactive BoM'
+  #   type: ibom
+  #   dir: BoM
+  #   options:
+  #     layer_view: F
 
   - name: 'print_sch'
     comment: "Schematic PDF"
