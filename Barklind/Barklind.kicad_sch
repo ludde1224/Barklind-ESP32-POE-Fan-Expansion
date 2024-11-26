@@ -2420,6 +2420,16 @@
 		)
 		(uuid "f7bed56d-723f-4f36-98d2-f1b678724e6c")
 	)
+	(text "What version of ESP32?"
+		(exclude_from_sim no)
+		(at 92.964 171.196 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "685efc7b-7a85-4410-b43e-a53a504eeb01")
+	)
 	(text "Placeholder"
 		(exclude_from_sim no)
 		(at 41.656 127.254 0)
