@@ -15,6 +15,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4.2.2
+      with:
+        persist-credentials: false # This is important for the next step
+    - name: Set up Git user
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
     - name: Run KiBot
       uses: INTI-CMNB/KiBot@v1.8.2
       with:
@@ -22,6 +28,13 @@ jobs:
         dir: docs
         schema: 'Barklind/Barklind.kicad_sch'
         board: 'Barklind/Barklind.kicad_pcb'
+    - name: Commit and push changes
+      run: |
+        git add docs
+        git commit -m "Update docs with KiBot results"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Upload results
       if: ${{ always() }}
       uses: actions/upload-artifact@v4
