@@ -26,3 +26,4 @@ outputs:
     dir: diff
     Options:
       only_different: true
+      always_fail_if_missing: true
