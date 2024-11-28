@@ -5,23 +5,39 @@ on:
     paths:
     - '**.kicad_sch'
     - '**.kicad_pcb'
-  pull_request:
-    paths:
-      - '**.kicad_sch'
-      - '**.kicad_pcb'
+  workflow_dispatch: # Allows workflow to be run manually
 
 jobs:
   kibot:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4.2.2
+      with:
+        persist-credentials: false # This is important for the next step
+    - name: Set up Git user
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+    - name: Authenticate with GitHub
+      run: |
+        echo "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com" > ~/.git-credentials
+        git config --global credential.helper store
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Run KiBot
-      uses: INTI-CMNB/KiBot@v2_k8
+      uses: INTI-CMNB/KiBot@v1.8.2
       with:
         config: Barklind/config.kibot.yaml
         dir: docs
         schema: 'Barklind/Barklind.kicad_sch'
         board: 'Barklind/Barklind.kicad_pcb'
+    - name: Commit and push changes
+      run: |
+        git add docs
+        git commit -m "Update docs with KiBot results"
+        git push "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:${GITHUB_REF#refs/heads/}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Upload results
       if: ${{ always() }}
       uses: actions/upload-artifact@v4
