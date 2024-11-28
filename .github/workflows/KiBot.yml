@@ -39,7 +39,7 @@ jobs:
       run: |
         git add docs
         git commit -m "Update docs with KiBot results"
-        git push
+        git push "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:${GITHUB_REF#refs/heads/}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Upload results
