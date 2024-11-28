@@ -7,8 +7,8 @@ on:
     - '**.kicad_pcb'
   pull_request:
     paths:
-      - '**.kicad_sch'
-      - '**.kicad_pcb'
+    - '**.kicad_sch'
+    - '**.kicad_pcb'
 
 jobs:
   kibot:
@@ -21,6 +21,12 @@ jobs:
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+    - name: Authenticate with GitHub
+      run: |
+        echo "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com" > ~/.git-credentials
+        git config --global credential.helper store
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Run KiBot
       uses: INTI-CMNB/KiBot@v1.8.2
       with:
