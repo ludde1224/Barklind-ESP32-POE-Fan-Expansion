@@ -5,10 +5,6 @@ on:
     paths:
     - '**.kicad_sch'
     - '**.kicad_pcb'
-  pull_request:
-    paths:
-    - '**.kicad_sch'
-    - '**.kicad_pcb'
   workflow_dispatch: # Allows workflow to be run manually
 
 jobs:
