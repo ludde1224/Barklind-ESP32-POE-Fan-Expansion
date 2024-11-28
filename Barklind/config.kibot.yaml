@@ -24,3 +24,5 @@ outputs:
     comment: "Generate diff"
     type: diff
     dir: diff
+    Options:
+      only_different: true
