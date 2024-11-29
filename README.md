@@ -4,3 +4,7 @@ Circuit that allows for controlling and powering 4 pin pwm fans using POE and an
 
 
 For overview of latest schematic, check out [Barklind PDF Schematic](docs/Schematic/Barklind-schematic.pdf)
+
+# PCB Render
+
+![Render of PCB](docs/render/Barklind-3D_blender_top.png)
