@@ -27,3 +27,8 @@ outputs:
     options:
       only_different: true
       always_fail_if_missing: true
+
+  - name: 'render'
+    comment: "Render 3D model"
+    type: blender_export
+    dir: render
