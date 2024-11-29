@@ -20,13 +20,13 @@ outputs:
     type: pdf_sch_print
     dir: Schematic
 
-  - name: 'diff'
-    comment: "Generate diff"
-    type: diff
-    dir: diff
-    options:
-      only_different: true
-      always_fail_if_missing: true
+  #- name: 'diff'
+  #  comment: "Generate diff"
+  #  type: diff
+  #  dir: diff
+  #  options:
+  #    only_different: true
+  #    always_fail_if_missing: true
 
   - name: 'render'
     comment: "Render 3D model"
