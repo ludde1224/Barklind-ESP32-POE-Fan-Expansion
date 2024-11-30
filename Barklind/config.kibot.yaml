@@ -35,5 +35,5 @@ outputs:
     options:
       point_of_view:
         rotate_x: 30
-        rotate_y: 0
+        rotate_y: 30
         rotate_z: -15
