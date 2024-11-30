@@ -6738,6 +6738,16 @@
 		)
 		(uuid "fe3c4ee0-6e3b-4afa-a075-ac9fcc9597ad")
 	)
+	(text "Support for more voltages?"
+		(exclude_from_sim no)
+		(at 68.326 38.354 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3e4c6a9b-5741-40eb-bc54-f576b738ba47")
+	)
 	(text "Placeholder"
 		(exclude_from_sim no)
 		(at 44.196 162.814 0)
@@ -6747,6 +6757,16 @@
 			)
 		)
 		(uuid "78e19b70-1904-4651-82fc-cddbd3cde3ce")
+	)
+	(text "Additional pin headers/connectors for more functionality?\nMaybe specific connectors, or just two rows of pin headers\n"
+		(exclude_from_sim no)
+		(at 155.194 146.812 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8f6498e7-1839-408a-b030-4a7304e4fec7")
 	)
 	(text "Pin 3 TACHO"
 		(exclude_from_sim no)
@@ -7645,7 +7665,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector:FanPinHeader_1x04_P2.54mm_Vertical"
 			(at 39.37 92.71 0)
 			(effects
 				(font
@@ -7722,7 +7742,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector:FanPinHeader_1x04_P2.54mm_Vertical"
 			(at 39.37 46.99 0)
 			(effects
 				(font
@@ -7788,7 +7808,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x19"
+		(property "Value" "ESP_Socket[1..19]"
 			(at 251.206 118.364 0)
 			(effects
 				(font
@@ -7797,7 +7817,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x19_P2.54mm_Vertical"
 			(at 257.81 90.17 0)
 			(effects
 				(font
@@ -8163,7 +8183,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector:FanPinHeader_1x04_P2.54mm_Vertical"
 			(at 39.37 68.58 0)
 			(effects
 				(font
@@ -8526,7 +8546,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "eef04777-ded3-4ccd-b864-ce2a1ba8b1b4")
 		(property "Reference" "J6"
 			(at 262.89 60.96 0)
@@ -8536,7 +8555,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_01x19"
+		(property "Value" "ESP_Socket[20..38]"
 			(at 262.89 63.5 0)
 			(effects
 				(font
@@ -8544,7 +8563,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x19_P2.54mm_Vertical"
 			(at 262.89 90.17 0)
 			(effects
 				(font
