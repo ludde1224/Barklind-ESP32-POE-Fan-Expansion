@@ -1,4 +1,6 @@
-[![KiBot](https://github.com/ludde1224/Barklind-ESP32-POE-Fan-Expansion/actions/workflows/KiBot.yml/badge.svg)](https://github.com/ludde1224/Barklind-ESP32-POE-Fan-Expansion/actions/workflows/KiBot.yml)
+![Static Badge](https://img.shields.io/badge/KiCad-v8.0.6-Orange?link=https%3A%2F%2Fwww.kicad.org%2F)
+![Static Badge](https://img.shields.io/badge/KiBot-v1.8.2-Orange?link=https%3A%2F%2Fgithub.com%2FINTI-CMNB%2FKiBot)
+
 # Barklind-ESP32-POE-Fan-Expansion
 Circuit that allows for controlling and powering 4 pin pwm fans using POE and an ethernet connected esp32
 
