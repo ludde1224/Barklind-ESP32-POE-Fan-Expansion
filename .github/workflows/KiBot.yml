@@ -1,10 +1,10 @@
 name: KiBot
 
 on:
-  push:
-    paths:
-    - '**.kicad_sch'
-    - '**.kicad_pcb'
+  #push:
+  #  paths:
+  #  - '**.kicad_sch'
+  #  - '**.kicad_pcb'
   workflow_dispatch: # Allows workflow to be run manually
 
 jobs:

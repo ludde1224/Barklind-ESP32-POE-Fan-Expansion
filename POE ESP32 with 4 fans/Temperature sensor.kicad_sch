@@ -434,7 +434,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "235ec857-c16c-4b68-810e-2a0807bd2a8e")
-		(property "Reference" "U1"
+		(property "Reference" "U4"
 			(at 68.0719 34.536 0)
 			(effects
 				(font
@@ -452,7 +452,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" ""
 			(at 87.63 41.91 0)
 			(effects
 				(font
