@@ -1106,7 +1106,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "b6aefab0-caa1-4335-93cb-8ea199d70a25")
 		(property "Reference" "ESP101"
