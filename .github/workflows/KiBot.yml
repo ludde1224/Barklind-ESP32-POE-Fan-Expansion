@@ -5,6 +5,7 @@ on:
     paths:
     - '**.kicad_sch'
     - '**.kicad_pcb'
+  workflow_dispatch:
 
 jobs:
   kibot:
@@ -25,7 +26,6 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Create PDF schematic
-      if: ${{ contains(github.event.head_commit.message, '.kicad_sch') }}
       uses: INTI-CMNB/KiBot@v1.8.2
       with:
         config: Barklind/print.kibot.yaml
@@ -33,7 +33,6 @@ jobs:
         schema: 'Barklind/Barklind.kicad_sch'
         board: 'Barklind/Barklind.kicad_pcb'
     - name: Create 3D render
-      if: ${{ contains(github.event.head_commit.message, '.kicad_pcb') }}
       uses: INTI-CMNB/KiBot@v1.8.2
       with:
         config: Barklind/render.kibot.yaml
@@ -41,7 +40,6 @@ jobs:
         schema: 'Barklind/Barklind.kicad_sch'
         board: 'Barklind/Barklind.kicad_pcb'
     - name: Create interactive BoM
-      if: ${{ contains(github.event.head_commit.message, '.kicad_pcb') }}
       uses: INTI-CMNB/KiBot@v1.8.2
       with:
         config: Barklind/ibom.kibot.yaml
