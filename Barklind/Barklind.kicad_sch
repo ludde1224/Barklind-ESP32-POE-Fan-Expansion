@@ -1064,6 +1064,16 @@
 		)
 		(uuid "c12a4789-f21e-4cee-bbf5-e8e8253d556b")
 	)
+	(text "Connect pins?"
+		(exclude_from_sim no)
+		(at 123.19 68.326 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c4b29015-628f-4cb7-b260-0743ec9e2d66")
+	)
 	(text "PWM fan1"
 		(exclude_from_sim no)
 		(at 185.42 93.218 0)
@@ -1290,7 +1300,7 @@
 			(uuid "1755188e-114a-40e4-866f-3e6d539e563d")
 		)
 		(instances
-			(project "POE ESP32 with 4 fans"
+			(project "Barklind"
 				(path "/693bf934-563d-494c-8702-b1400b481044"
 					(page "6")
 				)
@@ -1339,7 +1349,7 @@
 			(uuid "61926b67-78d2-485f-ac35-5bd60a33b1ce")
 		)
 		(instances
-			(project "POE ESP32 with 4 fans"
+			(project "Barklind"
 				(path "/693bf934-563d-494c-8702-b1400b481044"
 					(page "4")
 				)
@@ -1388,7 +1398,7 @@
 			(uuid "0af82c07-5574-4ddb-a31a-9900dab63684")
 		)
 		(instances
-			(project "POE ESP32 with 4 fans"
+			(project "Barklind"
 				(path "/693bf934-563d-494c-8702-b1400b481044"
 					(page "5")
 				)
@@ -1437,7 +1447,7 @@
 			(uuid "8953f5b7-6442-4dbd-9aed-ae3efa5e38cd")
 		)
 		(instances
-			(project "POE ESP32 with 4 fans"
+			(project "Barklind"
 				(path "/693bf934-563d-494c-8702-b1400b481044"
 					(page "7")
 				)
@@ -1486,7 +1496,7 @@
 			(uuid "4922819c-5493-48fb-863e-add501af9a3b")
 		)
 		(instances
-			(project "POE ESP32 with 4 fans"
+			(project "Barklind"
 				(path "/693bf934-563d-494c-8702-b1400b481044"
 					(page "3")
 				)
@@ -1625,7 +1635,7 @@
 			(uuid "be07e2e0-4c22-4f8e-89e7-f80b529e8087")
 		)
 		(instances
-			(project "POE ESP32 with 4 fans"
+			(project "Barklind"
 				(path "/693bf934-563d-494c-8702-b1400b481044"
 					(page "2")
 				)
@@ -1674,7 +1684,7 @@
 			(uuid "0c5da4c4-20b7-431c-824b-058738c0bef0")
 		)
 		(instances
-			(project "POE ESP32 with 4 fans"
+			(project "Barklind"
 				(path "/693bf934-563d-494c-8702-b1400b481044"
 					(page "8")
 				)
