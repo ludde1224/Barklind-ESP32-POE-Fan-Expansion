@@ -1,0 +1,13 @@
+kibot:
+  version: 1
+
+preflight:
+  run_erc: false
+  run_drc: false
+  check_zone_fills: false
+
+outputs:
+  - name: 'print_sch'
+    comment: "Schematic PDF"
+    type: pdf_sch_print
+    dir: Schematic

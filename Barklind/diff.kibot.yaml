@@ -1,0 +1,17 @@
+kibot:
+  version: 1
+
+preflight:
+  run_erc: false
+  run_drc: false
+  check_zone_fills: false
+
+outputs:
+
+  - name: 'diff'
+    comment: "Generate diff"
+    type: diff
+    dir: diff
+    options:
+      only_different: true
+      always_fail_if_missing: true
