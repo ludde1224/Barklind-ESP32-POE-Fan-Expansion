@@ -27,6 +27,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Create PDF schematic
       uses: INTI-CMNB/KiBot@v1.8.2
+      continue-on-error: true
       with:
         config: Barklind/print.kibot.yaml
         dir: docs
@@ -34,6 +35,7 @@ jobs:
         board: 'Barklind/Barklind.kicad_pcb'
     - name: Create 3D render
       uses: INTI-CMNB/KiBot@v1.8.2
+      continue-on-error: true
       with:
         config: Barklind/render.kibot.yaml
         dir: docs
@@ -41,6 +43,7 @@ jobs:
         board: 'Barklind/Barklind.kicad_pcb'
     - name: Create interactive BoM
       uses: INTI-CMNB/KiBot@v1.8.2
+      continue-on-error: true
       with:
         config: Barklind/ibom.kibot.yaml
         dir: docs
@@ -48,6 +51,7 @@ jobs:
         board: 'Barklind/Barklind.kicad_pcb'
     - name: Create diff
       uses: INTI-CMNB/KiBot@v1.8.2
+      continue-on-error: true
       with:
         config: Barklind/diff.kibot.yaml
         dir: docs
