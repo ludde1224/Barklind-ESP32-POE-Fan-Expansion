@@ -1,11 +1,10 @@
 name: KiBot
 
 on:
-  #push:
-  #  paths:
-  #  - '**.kicad_sch'
-  #  - '**.kicad_pcb'
-  workflow_dispatch: # Allows workflow to be run manually
+  push:
+    paths:
+    - '**.kicad_sch'
+    - '**.kicad_pcb'
 
 jobs:
   kibot:
@@ -25,10 +24,34 @@ jobs:
         git config --global credential.helper store
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - name: Run KiBot
+    - name: Create PDF schematic
+      if: contains(join(github.event.commits.*.modified), '.kicad_sch')
       uses: INTI-CMNB/KiBot@v1.8.2
       with:
-        config: Barklind/config.kibot.yaml
+        config: Barklind/print.kibot.yaml
+        dir: docs
+        schema: 'Barklind/Barklind.kicad_sch'
+        board: 'Barklind/Barklind.kicad_pcb'
+    - name: Create 3D render
+      if: contains(join(github.event.commits.*.modified), '.kicad_pcb')
+      uses: INTI-CMNB/KiBot@v1.8.2
+      with:
+        config: Barklind/render.kibot.yaml
+        dir: docs
+        schema: 'Barklind/Barklind.kicad_sch'
+        board: 'Barklind/Barklind.kicad_pcb'
+    - name: Create interactive BoM
+      if: contains(join(github.event.commits.*.modified), '.kicad_pcb')
+      uses: INTI-CMNB/KiBot@v1.8.2
+      with:
+        config: Barklind/ibom.kibot.yaml
+        dir: docs
+        schema: 'Barklind/Barklind.kicad_sch'
+        board: 'Barklind/Barklind.kicad_pcb'
+    - name: Create diff
+      uses: INTI-CMNB/KiBot@v1.8.2
+      with:
+        config: Barklind/diff.kibot.yaml
         dir: docs
         schema: 'Barklind/Barklind.kicad_sch'
         board: 'Barklind/Barklind.kicad_pcb'

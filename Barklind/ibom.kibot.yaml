@@ -1,0 +1,16 @@
+kibot:
+  version: 1
+
+preflight:
+  run_erc: false
+  run_drc: false
+  check_zone_fills: false
+
+outputs:
+
+   - name: ibom
+     comment: 'HTML interactive BoM'
+     type: ibom
+     dir: BoM
+     options:
+       layer_view: F

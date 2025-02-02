@@ -1,0 +1,29 @@
+kibot:
+  version: 1
+
+preflight:
+  run_erc: true
+  run_drc: true
+  check_zone_fills: true
+
+outputs:
+
+  - name: 'render_top'
+    comment: "Render 3D model"
+    type: blender_export
+    dir: render
+    options:
+      point_of_view:
+        rotate_x: 0
+        rotate_y: 0
+        rotate_z: 0
+  - name: 'render_bottom'
+    comment: "Render 3D model"
+    type: blender_export
+    dir: render
+    options:
+      point_of_view:
+        rotate_x: 0
+        rotate_y: 0
+        rotate_z: 180
+
