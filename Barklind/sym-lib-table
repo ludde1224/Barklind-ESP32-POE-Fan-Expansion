@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "1705469")(type "Legacy")(uri "D:/Projects/Barklind-ESP32-POE-Fan-Expansion/component-libraries/Phoenix/1705469.lib")(options "")(descr ""))
+)

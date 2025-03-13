@@ -7285,6 +7285,7 @@
 	)
 	(label "GND"
 		(at 133.35 177.8 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7295,6 +7296,7 @@
 	)
 	(label "FanSupply"
 		(at 102.87 157.48 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7305,6 +7307,7 @@
 	)
 	(label "Supply5V"
 		(at 102.87 172.72 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7316,6 +7319,7 @@
 	(hierarchical_label "Sensor4"
 		(shape output)
 		(at 228.6 119.38 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7327,6 +7331,7 @@
 	(hierarchical_label "Sensor3"
 		(shape output)
 		(at 228.6 101.6 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7338,6 +7343,7 @@
 	(hierarchical_label "Signal inputs"
 		(shape input)
 		(at 50.8 50.8 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7349,6 +7355,7 @@
 	(hierarchical_label "Sensor1"
 		(shape output)
 		(at 228.6 66.04 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7360,6 +7367,7 @@
 	(hierarchical_label "Sensor5"
 		(shape output)
 		(at 228.6 137.16 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7371,6 +7379,7 @@
 	(hierarchical_label "Sensor6"
 		(shape output)
 		(at 228.6 154.94 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7382,6 +7391,7 @@
 	(hierarchical_label "Supply"
 		(shape input)
 		(at 50.8 182.88 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7393,6 +7403,7 @@
 	(hierarchical_label "Sensor2"
 		(shape output)
 		(at 228.6 83.82 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7404,6 +7415,7 @@
 	(hierarchical_label "Signal outputs"
 		(shape output)
 		(at 50.8 81.28 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7415,6 +7427,7 @@
 	(hierarchical_label "Fan supply (opt)"
 		(shape input)
 		(at 50.8 165.1 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8623,7 +8636,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical"
+		(property "Footprint" "Connector:FanPinHeader_1x04_P2.54mm_Vertical"
 			(at 157.48 147.32 0)
 			(effects
 				(font
@@ -8926,7 +8939,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical"
+		(property "Footprint" "Connector:FanPinHeader_1x04_P2.54mm_Vertical"
 			(at 157.48 76.2 0)
 			(effects
 				(font
@@ -9464,7 +9477,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_2010_5025Metric_Pad1.40x2.65mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 170.942 24.13 90)
 			(effects
 				(font
@@ -9532,7 +9545,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical"
+		(property "Footprint" "Connector:FanPinHeader_1x04_P2.54mm_Vertical"
 			(at 157.48 129.54 0)
 			(effects
 				(font
@@ -9930,7 +9943,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical"
+		(property "Footprint" "Connector:FanPinHeader_1x04_P2.54mm_Vertical"
 			(at 157.48 93.98 0)
 			(effects
 				(font
@@ -10084,7 +10097,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal"
+		(property "Footprint" "Phoenix:PHOENIX_1705469"
 			(at 86.36 157.48 0)
 			(effects
 				(font
@@ -10369,7 +10382,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical"
+		(property "Footprint" "Connector:FanPinHeader_1x04_P2.54mm_Vertical"
 			(at 157.48 111.76 0)
 			(effects
 				(font
@@ -10751,7 +10764,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical"
+		(property "Footprint" "Connector:FanPinHeader_1x04_P2.54mm_Vertical"
 			(at 157.48 58.42 0)
 			(effects
 				(font

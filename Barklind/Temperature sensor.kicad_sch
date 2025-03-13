@@ -415,6 +415,7 @@
 	(hierarchical_label "Sensor"
 		(shape input)
 		(at 38.1 50.8 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Phoenix")(type "KiCad")(uri "D:/Projects/Barklind-ESP32-POE-Fan-Expansion/component-libraries/Phoenix")(options "")(descr ""))
+)

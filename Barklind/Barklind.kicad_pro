@@ -58,7 +58,10 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "silk_edge_clearance|169000000|77340000|387072f8-7d76-41ce-b73c-eae8e2088a9a|661f5610-6770-458d-bdfa-6ac4df876f71",
+        "silk_edge_clearance|169000000|87500000|387072f8-7d76-41ce-b73c-eae8e2088a9a|a9d5bad9-59cb-456f-b69c-dad99e49e1b9"
+      ],
       "meta": {
         "version": 2
       },
@@ -133,7 +136,7 @@
         "min_via_diameter": 0.6,
         "solder_mask_clearance": 0.0,
         "solder_mask_min_width": 0.0,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -181,6 +184,7 @@
       ],
       "track_widths": [
         0.0,
+        0.25,
         2.0
       ],
       "tuning_pattern_settings": {
@@ -501,7 +505,7 @@
         "track_width": 3.5,
         "via_diameter": 0.8,
         "via_drill": 0.4,
-        "wire_width": 6
+        "wire_width": 8
       }
     ],
     "meta": {
@@ -513,6 +517,18 @@
       {
         "netclass": "Power",
         "pattern": "PowerLine"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "FanSupply"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/Signal conditioning/FanSupply"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/Signal conditioning/GND"
       }
     ]
   },
